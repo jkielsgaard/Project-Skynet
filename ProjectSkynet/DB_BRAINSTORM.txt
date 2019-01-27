@@ -1,0 +1,47 @@
+DATABASE BUILD
+
+
+DATABASE
+    TABLES              - des
+        COLUMS          - des
+        
+PROJECT-SKYNET-DB
+    USERS
+        USERID      -   HexID (AB:AB:AB:AB)
+        USERNAME    -   min. 6 (A-Z, a-z, 1-9)
+        PASSWORD    -   min. 8 (A-Z, a-z, 1-9)
+        MAIL        -   TO RESET PASSWORD
+    USERDATA            -   
+        USERID      -   USERS->USERID
+        CONNECTED   -   OFF/ONLINE
+        USERVALUE   -   User value
+        RAM         -   User system ram (how much their system can do)
+        LEVEL       -   User level system
+        USERFILES   -   eg. log files - Logxx1.log|Logxx2.log|Logxx3.log|Logxx4.log|Logxx5.log|Logxx6.log
+    VIRFILES             - Virtual Files
+        FILENAMEID  -   eg. log files - logXX1.log|this is a log files blabla
+        USERID      -
+    VIRTOOLS            - Virtual Tools
+        TOOLNAMEID  -   Has user access to the tool ( Bool true/false )
+        USERID      -
+    VIONSY              -   Virtual Online System
+        VIONSYID    -   HexID (AB:AB:AB)
+        VIONSYNAME  -   min. 8 (A-Z, a-z, 1-9)
+        VIONSYVALUE -   Vionsy main value
+        VIONSYADR   -   Users adr to the connected Vionsy
+    VIONSYUSERDATA      -
+        VIONSYDATAID-
+        VIONSYID    -
+        USERID      -
+        USERADR     -
+        USERVALUE   -   User v in the Vionsy
+    VIONSYNPC           -   AI NPC
+        NPCID       -
+        NPCNAME     -
+        NPCVALUE    -
+        NPCADR      -
+    CONNECTIONS         -
+        CONNECTIONID
+        USERID      -
+        FIRSTCONNECTION - VIONSYID
+        CONNECTIONS -   eg. USERADR or VIONSYID->VIONSYID->USERADR

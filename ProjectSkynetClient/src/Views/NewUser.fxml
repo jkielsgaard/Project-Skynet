@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.Controllers.NewUser">
+
+    <Label text="Mail" GridPane.halignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <TextField fx:id="tf_Mail" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+    <Label text="Username" GridPane.halignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <TextField fx:id="tf_Username" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+    <Label text="Password" GridPane.halignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+    <PasswordField fx:id="pf_Password" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+    <Label text="Comfirm Password" GridPane.halignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+    <PasswordField fx:id="pf_cPassword" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+    <Button mnemonicParsing="false" fx:id="btn_Create" onAction="#Clicked_Create" text="Create" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+    <Button mnemonicParsing="false" fx:id="btn_Cancel" onAction="#Clicked_Cancel" text="Cancel" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+
+    <columnConstraints>
+        <ColumnConstraints minWidth="10" />
+        <ColumnConstraints minWidth="50" />
+        <ColumnConstraints minWidth="5" />
+        <ColumnConstraints minWidth="150" />
+        <ColumnConstraints minWidth="10" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10" />
+        <RowConstraints />
+        <RowConstraints minHeight="5" />
+        <RowConstraints />
+        <RowConstraints minHeight="5" />
+        <RowConstraints />
+        <RowConstraints minHeight="5" />
+        <RowConstraints />
+        <RowConstraints minHeight="5" />
+        <RowConstraints />
+        <RowConstraints minHeight="10" />
+    </rowConstraints>
+</GridPane>

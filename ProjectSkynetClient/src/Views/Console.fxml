@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="Views.Controllers.Console">
+
+    <columnConstraints>
+        <ColumnConstraints minWidth="5"/>
+        <ColumnConstraints minWidth="600"/>
+        <ColumnConstraints minWidth="10"/>
+        <ColumnConstraints minWidth="180"/>
+        <ColumnConstraints minWidth="5"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="5"/>
+        <RowConstraints minHeight="435"/>
+        <RowConstraints minHeight="20"/>
+        <RowConstraints minHeight="5"/>
+    </rowConstraints>
+
+    <TextArea fx:id="ta_consoleview" editable="false"
+              style="-fx-border-style: solid; -fx-font-family: Consolas; -fx-font-weight: bold; -fx-background-color: #1a1a1a; -fx-control-inner-background: #1a1a1a;  -fx-text-fill: #ffffff;  -fx-highlight-text-fill: #737373; -fx-highlight-fill: #cccccc;"
+              GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <TextField fx:id="tf_Command" maxHeight="10000" maxWidth="10000" onAction="#onEnter"
+               style="-fx-border-style: solid; -fx-font-family: Consolas; -fx-font-weight: bold; -fx-background-color: #1a1a1a; -fx-text-fill: white; -fx-highlight-text-fill: #737373; -fx-highlight-fill: #cccccc"
+               GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <GridPane GridPane.columnIndex="3" GridPane.rowIndex="1" xmlns="http://javafx.com/javafx/8.0.121"
+              xmlns:fx="http://javafx.com/fxml/1">
+
+        <columnConstraints>
+            <ColumnConstraints/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="5"/>
+            <RowConstraints minHeight="10"/>
+            <RowConstraints minHeight="10"/>
+            <RowConstraints minHeight="10"/>
+            <RowConstraints minHeight="10"/>
+            <RowConstraints minHeight="10"/>
+            <RowConstraints minHeight="10"/>
+            <RowConstraints minHeight="10"/>
+            <RowConstraints minHeight="10"/>
+            <RowConstraints minHeight="10"/>
+            <RowConstraints minHeight="10"/>
+            <RowConstraints minHeight="10"/>
+            <RowConstraints minHeight="10"/>
+            <RowConstraints minHeight="10"/>
+            <RowConstraints minHeight="10"/>
+        </rowConstraints>
+
+        <Label style="-fx-font-family: Consolas; -fx-font-weight: bold; -fx-font-size: 21px" text="User Stats"
+               GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1"/>
+        <Label style="-fx-font-family: Consolas; -fx-font-weight: bold; -fx-font-size: 16px" text="Value"
+               GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3"/>
+        <Label style="-fx-font-family: Consolas" fx:id="lb_uservalue" GridPane.columnIndex="0"
+               GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4"/>
+
+        <Label style="-fx-font-family: Consolas; -fx-font-weight: bold; -fx-font-size: 21px" text="Vionsy Stats"
+               GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6"/>
+        <Label style="-fx-font-family: Consolas; -fx-font-weight: bold; -fx-font-size: 16px" text="Vionsy"
+               GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="8"/>
+        <Label style="-fx-font-family: Consolas" fx:id="lb_vionsyname" GridPane.columnIndex="0"
+               GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="9"/>
+        <Label style="-fx-font-family: Consolas; -fx-font-weight: bold; -fx-font-size: 16px" text="Vionsy address"
+               GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="11"/>
+        <Label style="-fx-font-family: Consolas" fx:id="lb_vionsyadr" GridPane.columnIndex="0"
+               GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="12"/>
+        <Label style="-fx-font-family: Consolas; -fx-font-weight: bold; -fx-font-size: 16px" text="Value"
+               GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="14"/>
+        <Label style="-fx-font-family: Consolas" fx:id="lb_vionsyuservalue" GridPane.columnIndex="0"
+               GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="15"/>
+
+
+    </GridPane>
+</GridPane>
